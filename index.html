@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock,Paper,Scissors</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <h1>Rock, Paper, Scissors</h1>
+    </header>
+    
+    <div class="display">
+        <div class="box blue-box">YOU</div>
+            <div class="score-card">
+                <p class="blue-score">0 </p>
+                <p class="semi"> : </p>
+                <p class="red-score"> 0</p>
+            </div>
+        <div class="box red-box">BOT</div>
+    </div>
+
+    <header>
+        <h1 class= "shoot">Shoot!</h1>
+        <h2 class="comp-answer"></h2>
+    </header>
+    <div class="choices">
+        <img id="rock" data-selection="rock" src="rock.svg" alt="">
+        <img id="paper" data-selection="paper" src="paper.svg" alt="">
+        <img id = "scissors" data-selection="scissors" src="scissors.svg" alt="">
+    </div>
+</body>
+<script src="index.js"></script>
+</html>
