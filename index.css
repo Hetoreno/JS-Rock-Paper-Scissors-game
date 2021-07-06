@@ -6,6 +6,12 @@
 
 html{
     font-family: 'Roboto', sans-serif;
+    font-size: 62.5%;
+}
+
+:root{
+    --title:6rem;
+
 }
 
 body{
@@ -22,7 +28,7 @@ header{
 
 h1{
     margin:2rem;
-    font-size: 4rem;
+    font-size: var(--title);
 }
 /* DISPLAY */
 .display{
@@ -63,7 +69,7 @@ h1{
 }
 
 p{
-    font-size:4rem;
+    font-size:var(--title);
 }
 
 .semi{
@@ -86,4 +92,37 @@ img:hover{
     background:#212941;
     border-radius: 35%;
     cursor: pointer;
+}
+
+@media screen and (max-width:1024px) and (min-width:501px){
+    html{
+        font-size: 70%;
+    }
+    header{
+        width:80%;
+    }
+    .display{
+        width:90%;
+    }
+
+    img{
+        width:25%;
+    }
+}
+
+@media screen and (max-width:500px){
+    html{
+        font-size: 45%;
+    }
+    header{
+        width:80%;
+    }
+
+    .display{
+        width: 100%;
+    }
+
+    img{
+        width:25%;
+    }
 }
