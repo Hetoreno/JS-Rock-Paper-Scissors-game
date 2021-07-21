@@ -94,6 +94,32 @@ img:hover{
     cursor: pointer;
 }
 
+/* Highscore section */
+.highscore-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:5rem 0rem;
+}
+.highscore-section button{
+    border:none;
+    font-size: 3rem;
+    padding:1rem 2rem;
+    background: rgb(35, 139, 25);
+    color:white;
+    border-radius: 1rem;
+}
+
+.highscore-section button:hover{
+    background: rgb(27, 109, 19);
+    transition: all ease 0.2s;
+    cursor: pointer;
+}
+.highscore-section p{
+    margin:0rem 2rem;
+
+}
+
 @media screen and (max-width:1024px) and (min-width:501px){
     html{
         font-size: 70%;

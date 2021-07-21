@@ -1,7 +1,12 @@
 let scoreBlue = 0;
 let scoreRed = 0;
+let highscoreWhite = 0;
+
+
 const blue = document.querySelector(".blue-score");
 const red = document.querySelector(".red-score");
+const highscore= document.querySelector(".highscore");
+
 const answer = document.querySelector(".comp-answer");
 const shoot = document.querySelector(".shoot");
 
@@ -13,6 +18,9 @@ const scissors = document.querySelector("#scissors");
 function scoreWin (){
     scoreBlue++;
     blue.innerHTML = scoreBlue;
+    //highscore section
+    highscoreWhite++;
+    highscore.innerHTML = highscoreWhite;
 };
 function scoreLose (){
     scoreRed++;
@@ -66,3 +74,14 @@ function userClick (ownChoice){
     scissors.addEventListener("click",function(){
         userClick("scissors");
     });
+
+    //Reset Score
+    const resetScores = document.querySelector(".highscore-button");
+    const scoreBox = documen.querySelector('.score-card');
+    
+    resetScores.addEventListener('click',event =>{
+        while(scoreBox.children.length>0){
+            scoreBox.removeChild(scoreBox.children[0]);
+        }
+    })
+    //Highscore
